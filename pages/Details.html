@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events | Details</title>
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header class="bg-dark">
+    <div class="d-flex flex-row justify-content-between">
+        <h1>Amazing Events</h1>
+        <img src="../Assets/images/amazing_brand.png" alt="logo-company" class="img-logo-size">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler back-ground-AE" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="../index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./upcoming-events.html">UPCOMING EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./past-events.html">PAST EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./contact.html">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./stats.html">STATS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+</header>
+
+
+
+
+<main class="bg-dark main-details">
+  <!--------------------------------- div vue ------------------------------------------->
+  <div id="app">
+
+<!--------------------------------DETAIL CARD------------------------------------------>
+    <div class="details-card border border-info rounded" id="divofDetails" >
+      <img v-bind:src="evento.image" alt="prueba-de-details" class="img-detail rounded-start">
+      <div class="div-details ps-2">
+          <h4 class="text-center" id="details-tittle">{{evento.name}}</h4>
+          <div class="d-flex">
+              <p class="fw-bold">* Date:</p>
+              <p class="ms-2" >{{evento.date}}</p>
+          </div>
+          <div class="d-flex">
+              <p class="fw-bold">* Description:</p>
+              <p class="ms-2" >{{evento.description}}</p>
+          </div>
+          <div class="d-flex">
+              <p class="fw-bold">* Category: </p>
+              <p class="ms-2" >{{evento.category}}</p>
+          </div>
+          <div class="d-flex">
+              <p class="fw-bold">* Place:</p>
+              <p class="ms-2" >{{evento.place}}</p>
+          </div>
+          <div class="d-flex">
+              <p class="fw-bold">* Capacity:</p>
+              <p class="ms-2" >{{evento.capacity}} </p>
+          </div>
+          <div class="d-flex">
+            <p class="fw-bold">* {{ evento.estimate ? 'Estimate' : 'Assistance' }}:</p>
+            <p class="ms-2">{{ evento.estimate ? evento.estimate : evento.assistance }}</p>
+          </div>
+          <div class="d-flex">
+              <p class="fw-bold">* Price:</p>
+              <p class="ms-2">{{evento.price}}</p>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</main> 
+<footer>
+<div>
+ <a href="#"><img src="../Assets/images/whatsapp.png" alt="wpp-logo" class="social-logo"></a>
+ <a href="#"><img src="../Assets/images/instagram.png" alt="insta-logo" class="social-logo"></a>
+  <a href="#"><img src="../Assets/images/facebook.png" alt="facebook-logo" class="social-logo"></a>
+</div>
+<div>
+<h3>
+COHORT Nro:51
+</h3>
+</div>
+</footer>  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="../javascript/details.js" ></script>
+</body>
+</html>

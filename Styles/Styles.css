@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .aheader {
+    text-decoration: none;
+}
+.back-ground-AE {
+    background-color: rgb(217,3,104) !important;
+}
+.font-color-AE {
+    color: rgb(217,3,104) !important;
+}
+.img-logo-size {
+    width: 10rem;
+    height: 5rem;
+}
+.banner-h {
+    height: 10rem;
+    object-fit: cover;
+}
+h1 {
+    display: none;
+}
+.c-h5{
+    color: rgb(217,3,104) !important;
+    font-size: 3rem;
+}
+.font-size {
+        font-size: 0.7rem;
+}
+.mensaje {
+    padding-bottom: 10rem;
+}
+
+
+footer {
+    background-color: rgb(226, 76, 146);
+    display: flex;
+    justify-content: space-between;
+}
+.social-logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+footer div {
+    display: flex;
+    align-items: center;
+    
+}
+.none-display {
+    display: none;
+}
+h4 {
+    margin-left:1rem;
+}
+.form-h {
+    width: 35rem;
+    
+}
+
+table {
+    border: white 0.2rem solid;
+    border-collapse: collapse;
+}
+table tr th {
+    color: rgb(217,3,104) !important;
+    font-size: 1.5rem !important;
+    width: 100%;
+    font-weight: bold;
+}
+table tr td {
+    color: rgb(217,3,104) !important;
+    font-size: 1rem;
+    border: 0.2rem white solid;
+    width: 30%;
+    height: 3rem;
+}
+.main-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-detail {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.div-details {
+    background-color: aqua;
+}
+.details-card {
+    flex-direction:column;
+    justify-content: center;
+}
+
+.div-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.block-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    background-color:rgb(217,3,104) ;
+    height: 25rem;
+    width: 17rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.img-card {
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    object-fit: cover
+    
+}
+.a-cards {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+}
+h3 {
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+}
+p {
+    font-size: 1rem !important;
+}
+.card-text-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+}
+.card-button-and-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.computer-screen-main {
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-check-label{
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+.div-checknadsearch {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.search-bar {
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 0.3rem;
+    border-color: rgb(217,3,104);
+    height: 2.4rem;
+}
+.boton-css {
+    align-self: center;
+}
+.contact-h {
+    height: 80vh;
+}
+.div-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 3rem;
+}
+.contact-form {
+    flex-direction: column;
+    width: 75%;
+}
+.filter{
+    display: none !important;
+}
+.mensaje{
+    font-size: 3rem;
+    color: rgb(217,3,104);
+    font-weight: bold;
+}
+@media screen and (min-width: 767px) {
+    .banner-h {
+        height: 15rem;
+    }
+    .div-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block-card {
+        margin: 1rem;
+    }
+    .main-hight{
+        height: 100vh;
+    }
+    .contact-h {
+        height: 100vh;
+    }
+    .div-form {
+        margin-top: 5rem;
+    }
+    .div-checknadsearch {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 991px) {
+    .banner-h {
+        height: 15rem;
+    }
+    .div-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block-card {
+        margin: 1rem;
+    }
+    .contact-h {
+        height: 50rem;
+    }
+
+    .img-detail {
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+    .details-card {
+        display: flex;
+        flex-direction:row;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .main-details{
+        height: 100vh;
+    }
+    .main-h{
+        height: 100% !important;
+    }
+    .c-h5{
+        margin-bottom: 3rem;
+        font-size: 5rem;
+    }
+    .check-box{
+        flex-direction: row;
+    }
+    .form-check-label {
+        margin: 0 !important;
+    }
+}

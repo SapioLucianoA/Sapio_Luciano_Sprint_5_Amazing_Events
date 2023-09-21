@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events | Stats</title>
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header class="bg-dark">
+    <div class="d-flex flex-row justify-content-between">
+        <h1>Amazing Events</h1>
+        <img src="../Assets/images/amazing_brand.png" alt="logo-company" class="img-logo-size">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler back-ground-AE" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="../index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./upcoming-events.html">UPCOMING EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="#">PAST EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./contact.html">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active font-color-AE" aria-current="page" href="./stats.html">STATS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+</header>
+
+<main class="bg-dark"> 
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 1"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="../index.html"><img src="../Assets/images/optional_banner_4.jpg" class="d-block w-100 banner-h" alt="home-banner"></a>
+      <div class="carousel-caption .d-block d-md-block mb-2">
+        <a href="../index.html" class="aheader"><h5 class="c-h5">Home</h5></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="./upcoming-events.html"><img src="../Assets/images/optional_banner_3.jpg" class="d-block w-100 banner-h" alt="Upcoming Events"></a>
+      <div class="carousel-caption .d-block d-md-block mb-1">
+        <a href="./upcoming-events.html" class="aheader"><h5 class="c-h5">Upcoming Events</h5></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="./past-events.html"><img src="../Assets/images/optional_banner_2.jpg" class="d-block w-100 banner-h" alt="Past-Event-banner"></a>
+      <div class="carousel-caption .d-block d-md-block mb-2">
+        <a href="./past-events.html" class="aheader"> <h5 class="c-h5">Past Events</h5></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="./contact.html"><img src="../Assets/images/optional_banner_5.jpg" class="d-block w-100 banner-h" alt="Contact-banner"> </a>
+      <div class="carousel-caption .d-block d-md-block mb-2">
+        <a href="./contact.html" class="aheader"><h5 class="c-h5">Contact</h5></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="../Assets/images/optional_banner_1.jpg" class="d-block w-100 banner-h" alt="Stats-banner"></a>
+      <div class="carousel-caption .d-block d-md-block mb-2">
+        <a href="#" class="aheader"><h5 class="c-h5">Stats</h5></a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="app">
+ <!-- primera tabla -->
+<div class="d-flex justify-content-center w-100" id="tabla-1" >
+  <table class="w-100">
+    <tr>
+      <th colspan="3">
+        <p class="fs-5 fw-bold text-center">Event Statistics</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="text-center fw-bold">Events with highest % of assistance</td>
+      <td class="text-center fw-bold">Events with lowest % of assistance</td>
+      <td class="text-center fw-bold">Events with larger capacity</td>
+    </tr>
+    <tr>
+      <td class ="text-center fw-bold">{{primero.name}} {{this.calcularPorcentaje(primero.assistance, primero.capacity)}}%</td>
+
+      <td class ="text-center fw-bold">{{ultimo.name}} {{this.calcularPorcentaje(ultimo.assistance, ultimo.capacity)}}%</td>
+
+    <td class ="text-center fw-bold"> {{capacityMayor.name}}- Capacity:{{capacityMayor.capacity}} </td>
+   </tr>
+  </table>
+</div>
+ <!-- segunda tabla -->
+<div class="d-flex justify-content-center w-100" id="tabla-3" > 
+  <table class="w-100">
+    <tr>
+      <th colspan="3">
+        <p class="fs-5 fw-bold text-center">Upcoming events statistics by category</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="text-center fw-bold">categories</td>
+      <td class="text-center fw-bold" >Revenues</td>
+      <td class="text-center fw-bold" >Porcentage of estimate</td>
+    </tr>
+    <tr v-for="event of SumaUP">
+      <td class="text-center fw-bold" >{{event.category}}</td>
+      <td class="text-center fw-bold" >$ {{event.recaudacion}}</td>
+      <td class="text-center fw-bold" > {{this.calcularPorcentaje(event.assistance, event.capacity)}}%</td>
+    </tr>
+  </table>
+</div>
+ <!-- tercera tabla -->
+ <div class="d-flex justify-content-center w-100" id="tabla-2" > 
+  <table class="w-100">
+    <tr>
+      <th colspan="3">
+        <p class="fs-5 fw-bold text-center">Past events statistics by category</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="text-center fw-bold">categories</td>
+      <td class="text-center fw-bold" >Revenues</td>
+      <td class="text-center fw-bold" >Porcentage of assistance</td>
+    </tr>
+    <tr v-for="event of SumaPast">
+      <td class="text-center fw-bold" >{{event.category}}</td>
+      <td class="text-center fw-bold" >$ {{event.recaudacion}}</td>
+      <td class="text-center fw-bold" > {{this.calcularPorcentaje(event.assistance, event.capacity)}}%</td>
+    </tr>
+  </table>
+  </div >
+
+</div>
+</main> 
+<footer>
+<div>
+ <a href="#"><img src="../Assets/images/whatsapp.png" alt="wpp-logo" class="social-logo"></a>
+ <a href="#"><img src="../Assets/images/instagram.png" alt="insta-logo" class="social-logo"></a>
+  <a href="#"><img src="../Assets/images/facebook.png" alt="facebook-logo" class="social-logo"></a>
+</div>
+<div>
+<h3>
+COHORT Nro:51
+</h3>
+</div>
+</footer>  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="../javascript/stats.js"></script>
+</body>
+</html>
